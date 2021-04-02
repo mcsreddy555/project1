@@ -1,0 +1,97 @@
+<section id="content-wrapper">
+    <h3>Reviews</h3>
+    <div class="card mt-4" style="border:none">
+               <div class="mt-4">
+            <span class="  mr-2 ml-4"><b>Filters:</b>&nbsp;&nbsp;</span>
+            <div class="radio-item">
+                <input type="radio" id="1" name="gender" value="1"> &nbsp;
+                <label class="mr-4 " for="1">All</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="3" name="gender" value="3">&nbsp;
+                <label class="mr-4" for="3">Store </label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="4" name="gender" value="4">&nbsp;
+                <label class="mr-4" for="4">Restaurant</label>
+            </div>
+            <div class="mr-2" style="float:right;">
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+            </div>
+            
+        </div>
+        <div id="dtBasicExample_wrapper" class="dataTables_wrapper" style="margin: 20px 20px;border: 1px solid #fbf4f4;
+    border-radius: 9px;">
+            <table id="dtBasicExample" class="table table-striped" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-sm" style="width: 11%;">Review ID
+                        </th>
+                        <th class="th-sm" style="width: 21%;">Comments 
+                        </th>
+                        <th class="th-sm" style="width: 6%;">Ratings
+                        </th>
+                        <th class="th-sm" style="width: 24%;">Customer Details 
+                        </th>
+                        <th class="th-sm" style="width: 11%;">Order ID
+                        </th>
+                        <th class="th-sm" style="width: 15%;">Response
+                        </th>
+                        <th class="th-sm" style="width: 11%;">Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span>OD00001</span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Service is Excellent
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               5
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John
+                            </span>
+
+                        </td>
+                        <td class="text-sky">OD00001</td>
+                        <td>
+                            comments
+                        </td>
+                        <td>
+                            <a href="javascript:void(0)" id="Reviews" onClick="loadChildren('Replyreviews.html', 'Reviews')" style="text-decoration:none"> 
+                               
+                                    <img src="./image/reply.svg" alt="">
+                              
+                            </a>
+                            
+                            <img src="./image/edit.svg" alt="">
+                            <img src="image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+
+            <!------------------->
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('#dtBasicExample').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+    });
+</script>

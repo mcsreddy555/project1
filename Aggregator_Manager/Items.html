@@ -1,0 +1,330 @@
+<section id="content-wrapper">
+    <h3>Items</h3>
+    <div class="card mt-4" style="border:none">
+        <div class="mt-4 ml-4">
+            <a href="javascript:void(0)" id="Items"
+                onClick="loadChildren('AddItems.html', 'Items')">
+                <li style="list-style: none;">
+                    <button type="button" class="btn btn-outline-danger mr-4" style="float: left;">ADD</button>
+                </li>
+            </a>
+        </div>
+               <div class="mt-4">
+            <span class="  mr-2 ml-4"><b>Filters:</b>&nbsp;&nbsp;</span>
+            <!-- <div class="radio-item">
+                <input type="radio" id="1" name="gender" value="1"> &nbsp;
+                <label class="mr-4 " for="1">All</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="3" name="gender" value="3">&nbsp;
+                <label class="mr-4" for="3">Store </label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="4" name="gender" value="4">&nbsp;
+                <label class="mr-4" for="4">Restaurant</label>
+            </div> -->
+            <div class="select-cat">
+                <label for="">
+                    <select name="" id="" placeholder="select" class="select input-carosule1">
+                        <option value="">Select Category</option>
+                    </select>
+                </label>
+            </div>
+            <div class="select-cat">
+                <label for="">
+                    <select name="" id="" placeholder="select" class="select input-carosule1">
+                        <option value="">Select Sub Category</option>
+                    </select>
+                </label>
+            </div>
+            <div class="mr-2" style="float:right;">
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+            </div>
+            
+        </div>
+        <div id="dtBasicExample_wrapper" class="dataTables_wrapper" style="margin: 20px 20px;border: 1px solid #fbf4f4;
+    border-radius: 9px;">
+            <table id="dtBasicExample" class="table table-striped" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-sm" style="width: 11%;">ID
+                        </th>
+                        <th class="th-sm" style="width: 21%;">Item Name 
+                        </th>
+                        <th class="th-sm" style="width: 20%;">Description
+                        </th>
+                        <th class="th-sm" style="width: 24%;">Sub-Category
+                        </th>
+                        <th class="th-sm" style="width: 11%;">Category
+                        </th>
+                        <th class="th-sm" style="width: 15%;">Stock
+                        </th>
+                        <th class="th-sm" style="width: 11%;">Price
+                        </th>
+                        <th class="th-sm" style="width: 11%;">Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span>I00001</span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Parle Biscuit
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Sweet
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Biscuits
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Snacks
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               30 Qty
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               2.4
+                            </span>
+                        </td>
+                        <td>
+                            <!-- <a href="javascript:void(0)" id="Reviews" onClick="loadChildren('Replyreviews.html', 'Reviews')" style="text-decoration:none"> 
+                               
+                                    <img src="./image/reply.svg" alt="">
+                              
+                            </a> -->
+                            
+                            <img src="./image/edit.svg" alt="">
+                            <img src="image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>I00001</span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Parle Biscuit
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Sweet
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Biscuits
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Snacks
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               30 Qty
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               2.4
+                            </span>
+                        </td>
+                        <td>
+                            <!-- <a href="javascript:void(0)" id="Reviews" onClick="loadChildren('Replyreviews.html', 'Reviews')" style="text-decoration:none"> 
+                               
+                                    <img src="./image/reply.svg" alt="">
+                              
+                            </a> -->
+                            
+                            <img src="./image/edit.svg" alt="">
+                            <img src="image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>I00001</span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Parle Biscuit
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Sweet
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Biscuits
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Snacks
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               30 Qty
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               2.4
+                            </span>
+                        </td>
+                        <td>
+                            <!-- <a href="javascript:void(0)" id="Reviews" onClick="loadChildren('Replyreviews.html', 'Reviews')" style="text-decoration:none"> 
+                               
+                                    <img src="./image/reply.svg" alt="">
+                              
+                            </a> -->
+                            
+                            <img src="./image/edit.svg" alt="">
+                            <img src="image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>I00001</span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Parle Biscuit
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Sweet
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Biscuits
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Snacks
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               30 Qty
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               2.4
+                            </span>
+                        </td>
+                        <td>
+                            <!-- <a href="javascript:void(0)" id="Reviews" onClick="loadChildren('Replyreviews.html', 'Reviews')" style="text-decoration:none"> 
+                               
+                                    <img src="./image/reply.svg" alt="">
+                              
+                            </a> -->
+                            
+                            <img src="./image/edit.svg" alt="">
+                            <img src="image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>I00001</span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Parle Biscuit
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Sweet
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Biscuits
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               Snacks
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               30 Qty
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                               2.4
+                            </span>
+                        </td>
+                        <td>
+                            <!-- <a href="javascript:void(0)" id="Reviews" onClick="loadChildren('Replyreviews.html', 'Reviews')" style="text-decoration:none"> 
+                               
+                                    <img src="./image/reply.svg" alt="">
+                              
+                            </a> -->
+                            
+                            <img src="./image/edit.svg" alt="">
+                            <img src="image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+
+            <!------------------->
+        </div>
+    </div>
+</section>
+
+<style>
+    .select-cat{
+        display: inline-flex;
+    }
+    .select{
+        width: 250px;
+        height: 33px;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        $('#dtBasicExample').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+    });
+</script>

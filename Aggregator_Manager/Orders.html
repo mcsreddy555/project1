@@ -1,0 +1,429 @@
+<section id="content-wrapper">
+    <h3>Orders</h3>
+    <div class="card mt-4" style="border:none">
+        <form class="mt-4 ml-4" action="/action_page.php">
+            <label for="birthday"><b>From Date</b></label>
+            <input type="date" id="birthday" name="birthday">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="birthday"><b>To Date</b></label>
+            <input type="date" id="birthday" name="birthday">
+            
+          </form>
+        <div class="mt-4">
+            <span class="  mr-2 ml-4"><b>Filters:</b>&nbsp;&nbsp;</span>
+            <div class="radio-item">
+                <input type="radio" id="1" name="gender" value="1"> &nbsp;
+                <label class="mr-4 " for="1">All</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="3" name="gender" value="3">&nbsp;
+                <label class="mr-4" for="3">Store </label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="4" name="gender" value="4">&nbsp;
+                <label class="mr-4" for="4">Restaurant</label>
+            </div>
+            <div class="mr-2" style="float:right; display: flex;width: 21%;height: 4vh;">
+                <label for="order"><b>OrderStatus:</b></label> &nbsp; &nbsp; &nbsp;
+                <select class="w-75" name="order" id="order">
+                    <option value="All">All</option>
+
+                </select>
+            </div>
+        </div>
+        <div id="dtBasicExample_wrapper" class="dataTables_wrapper" style="margin: 20px 20px;border: 1px solid #fbf4f4;
+    border-radius: 9px;">
+            <table id="dtBasicExample" class="table table-striped" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-sm" style="width: 11%;">Order ID
+                        </th>
+                        <th class="th-sm" style="width: 11%;">Date
+                        </th>
+                        <th class="th-sm" style="width: 14%;">Customer Name
+                        </th>
+                        <th class="th-sm" style="width: 17%;">Store / Restaurant
+                        </th>
+                        <th class="th-sm" style="width: 17%;">Payment Status
+                        </th>
+                        <th class="th-sm" style="width: 14%;">Kitchen Status
+                        </th>
+                        <th class="th-sm" style="width: 14%;">Amount
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00001</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                02/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                James Street Restaurant
+                            </span>
+
+                        </td>
+                        <td style="font-size: 14px;">Cash On Delivery</td>
+                        <td>
+                            <button type="button" class="btn w-75"
+                                style="background-color:#F39C12;color: white">PACKED</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                8.40
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00002</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                02/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Degrees 63
+                            </span>
+                        </td>
+                        <td style="font-size: 14px;">Online Payment</td>
+                        <td>
+                            <button type="button" class="btn w-75" style="background-color:#E2DCD7;color: black">In
+                                Queue</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                6.20
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00003</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                02/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                Great Manchester
+                            </span>
+                        </td>
+                        <td style="font-size: 14px;">Cash On Delivery</td>
+                        <td>
+                            <button type="button" class="btn w-75" style="background-color:#E2DCD7;color: black">In
+                                Queue</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                5.40
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00004</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                02/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                The Pen & Pencil
+                            </span>
+                        </td>
+                        <td style="font-size: 14px;">Online Payment</td>
+                        <td>
+                            <button type="button" class="btn w-75"
+                                style="background-color:#1492E6;color: white">Shipped</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                4.50
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00005</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                02/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                James Street
+                            </span>
+                        </td>
+                        <td style="font-size: 14px;">Online Payment</td>
+                        <td>
+                            <button type="button" class="btn w-75"
+                                style="background-color:#F39C12;color: white">Packed</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                8.20
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00006</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                01/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td style="font-size: 14px;">Cash On Delivery</td>
+                        <td>
+                            <button type="button" class="btn w-75"
+                                style="background-color:#008000;color: white">Delivered</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                5.99
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00007</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                01/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td style="font-size: 14px;">Cash On Delivery</td>
+                        <td>
+                            <button type="button" class="btn w-75"
+                                style="background-color:#008000;color: white">Delivered</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                6.10
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00008</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                01/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td style="font-size: 14px;">Online Payment</td>
+                        <td>
+                            <button type="button" class="btn w-75"
+                                style="background-color:#008000;color: white">Delivered</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                4.60
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00009</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                01/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td style="font-size: 14px;">Online Payment</td>
+                        <td>
+                            <button type="button" class="btn w-75"
+                                style="background-color:#D42628;color: white">Returned</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                9.00
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="id-color" href="javascript:void(0)" id="Orders"
+                                onClick="loadChildren('orderdetail.html','Orders')" style="text-decoration: none;">
+                                <li class="active-style" style="list-style: none;">
+                                    <span>OD00010</span>
+                                </li>
+                            </a>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                01/03/2021
+                            </span>
+
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                John Dee
+                            </span>
+                        </td>
+                        <td style="font-size: 14px;">Online Payment</td>
+                        <td>
+                            <button type="button" class="btn w-75"
+                                style="background-color:#008000;color: white">Delivered</button>
+                        </td>
+                        <td>
+                            <span style="font-size: 14px;">
+                                12.60
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!------------------->
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('#dtBasicExample').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+    });
+</script>

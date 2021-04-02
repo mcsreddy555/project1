@@ -1,0 +1,234 @@
+<section id="content-wrapper">
+    <div class="categories">
+        <h2>Sub Categories</h2>
+        <div class="card mt-4" style="border:none">
+            <div class="mt-4 ml-4">
+                <a href="javascript:void(0)" id="SubCategories"
+                    onClick="loadChildren('AddSubCategories.html', 'SubCategories')">
+                    <li style="list-style: none;">
+                        <button type="button" class="btn btn-outline-danger mr-4" style="float: left;">ADD</button>
+                    </li>
+                </a>
+            </div>
+            <div id="dtBasicExample_wrapper" class="dataTables_wrapper" style="margin: 20px 20px;border: 1px solid #fbf4f4;
+        border-radius: 9px;">
+                <table id="dtBasicExample" class="table table-striped" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th class="th-sm" style="width: 16%;">Category ID
+                            </th>
+                            <th class="th-sm" style="width: 20%;">Sub-Category Name
+                            </th>
+                            <th class="th-sm" style="width: 15%; ">Image
+                            </th>
+                            <th class="th-sm" style="width: 45%; ">Categories
+                            </th>
+                            <th class="th-sm" style="width: 15%;">Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="padding-top: 1%;">
+                            <td>
+                                <span>C00001</span>
+                            </td>
+                            <td>Category1</td>
+                            <td style="font-size: 14px;">
+                                <div style="background: darkgary;">
+                                    <img src="./image/instagram.png" class="img-style" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                Categories01, Categories02
+                            </td>
+                            <td>
+                                <img src="./image/edit.svg" alt="">
+                                <img src="image/delete.svg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>C00001</span>
+                            </td>
+                            <td>Category1</td>
+                            <td style="font-size: 14px;">
+                                <div style="background: darkgary;">
+                                    <img src="./image/instagram.png" class="img-style" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                Categories01, Categories02
+                            </td>
+                            <td>
+                                <img src="./image/edit.svg" alt="">
+                                <img src="image/delete.svg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>C0001</td>
+                            <td>Category </td>
+                            <td style="font-size: 14px;">
+                                <div style="background: darkgary;">
+                                    <img src="./image/instagram.png" class="img-style" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                Categories01, Categories02
+                            </td>
+                            <td><img  src="/image/edit.svg" alt="">
+                                <img src="/image/delete.svg" alt="">
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* .subC{
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+    } */
+
+    
+    
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('#dtBasicExample').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+    });
+</script>
+
+<!-- <section id="content-wrapper">
+    <h3>Sub Categories</h3>
+    <div class="card mt-4" style="width: 100%; border: none;">
+        <div class="mt-4 ml-4">
+            <a href="javascript:void(0)" id="SubCategories"
+                onClick="loadChildren('AddSubCategories.html', 'SubCategories')">
+                <li style="list-style: none;">
+                    <button type="button" class="btn btn-outline-danger mr-4" style="float: left;">ADD</button>
+                </li>
+            </a>
+        </div>
+        <div id="dtBasicExample_wrapper" class="dataTables_wrapper" style="margin: 20px 20px;border: 1px solid #fbf4f4;
+    border-radius: 9px;">
+            <table id="dtBasicExample" class="table table-striped" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-sm" style="width: 20%;">Category ID
+                        </th>
+                        <th class="th-sm" style="width: 30%;">Sub-Category Name
+                        </th>
+                        <th class="th-sm" style="width: 20%; ">Image
+                        </th>
+                        <th class="th-sm" style="width: 40%; ">Categories
+                        </th>
+                        <th class="th-sm" style="width: 11%;">Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C0001</td>
+                        <td>Category </td>
+                        <td style="font-size: 14px;">
+                            <div style="background: darkgary;">
+                                <img src="./image/instagram.png" class="img-style" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            Categories01, Categories02
+                        </td>
+                        <td><img class="img3" src="/image/edit.svg" alt="">
+                            <img class="img4" src="/image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IMG001</td>
+                        <td>IMG 01 </td>
+                        <td style="font-size: 14px;">
+                            <div style="background: darkgary;">
+                                <img src="./image/instagram.png" class="img-style" alt="">
+                            </div>
+                        </td>
+                        <td><img class="img3" src="/image/edit.svg" alt="">
+                            <img class="img4" src="/image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IMG001</td>
+                        <td>IMG 01 </td>
+                        <td style="font-size: 14px;">
+                            <div style="background: darkgary;">
+                                <img src="./image/instagram.png" class="img-style" alt="">
+                            </div>
+                        </td>
+                        <td><img class="img3" src="/image/edit.svg" alt="">
+                            <img class="img4" src="/image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IMG001</td>
+                        <td>IMG 01 </td>
+                        <td style="font-size: 14px;">
+                            <div style="background: darkgary;">
+                                <img src="./image/instagram.png" class="img-style" alt="">
+                            </div>
+                        </td>
+                        <td><img class="img3" src="/image/edit.svg" alt="">
+                            <img class="img4" src="/image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IMG001</td>
+                        <td>IMG 01 </td>
+                        <td style="font-size: 14px;">
+                            <div style="background: darkgary;">
+                                <img src="./image/instagram.png" class="img-style" alt="">
+                            </div>
+                        </td>
+                        <td><img class="img3" src="/image/edit.svg" alt="">
+                            <img class="img4" src="/image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IMG001</td>
+                        <td>IMG 01 </td>
+                        <td style="font-size: 14px;">
+                            <div style="background: darkgary;">
+                                <img src="./image/instagram.png" class="img-style" alt="">
+                            </div>
+                        </td>
+                        <td><img class="img3" src="/image/edit.svg" alt="">
+                            <img class="img4" src="/image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IMG001</td>
+                        <td>IMG 01 </td>
+                        <td style="font-size: 14px;">
+                            <div style="background: darkgary;">
+                                <img src="./image/instagram.png" class="img-style" alt="">
+                            </div>
+                        </td>
+                        <td><img class="img3" src="/image/edit.svg" alt="">
+                            <img class="img4" src="/image/delete.svg" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        $('#dtBasicExample').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+    });
+</script> -->
